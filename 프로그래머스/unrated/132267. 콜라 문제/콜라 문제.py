@@ -17,10 +17,4 @@ def solution(a, b, n):
             tmp += math.floor(n % a) # 나머지는 모아두기
             n = n - (n - (n % a)) + (b * (n // a)) # 준 병 빼고, 받은 병 더하기 
 
-    tmp_sum = cnt + tmp
-    if tmp_sum >= a:
-        if tmp_sum % a == 0:        
-            cnt += b * (tmp_sum // a)
-
-    
     return cnt
