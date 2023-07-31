@@ -2,7 +2,7 @@ import math
 
 def solution(a, b, n):
     
-    # 빈 병 카운팅
+    # 교환해서 받는 병 카운팅
     cnt = 0
     
     while n // a > 0: # 더이상 나눠지지 않을 때까지 반복
