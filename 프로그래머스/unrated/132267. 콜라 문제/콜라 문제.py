@@ -1,5 +1,3 @@
-import math
-
 def solution(a, b, n):
     
     # 교환해서 받는 병 카운팅
