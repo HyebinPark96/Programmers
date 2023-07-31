@@ -1,3 +1,5 @@
+import math
+
 def solution(a, b, n):
     
     # 교환해서 받는 병 카운팅
@@ -5,6 +7,6 @@ def solution(a, b, n):
     
     while n // a > 0: # 더이상 나눠지지 않을 때까지 반복
         cnt += b * (n // a)
-        n = n - (n - (n % a)) + (b * (n // a)) # 준 병 빼고, 받은 병 더하기 
+        n = (n % a) + (b * (n // a)) # 받을 병 + 주고 남는 병 
 
     return cnt
