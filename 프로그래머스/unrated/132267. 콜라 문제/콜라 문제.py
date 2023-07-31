@@ -7,6 +7,6 @@ def solution(a, b, n):
     
     while n // a > 0: # 더이상 나눠지지 않을 때까지 반복
         cnt += b * (n // a)
-        n = (n % a) + (b * (n // a)) # 받을 병 + 주고 남는 병 
+        n = (n % a) + (b * (n // a)) # 주고 남는 병 + 받을 병  
 
     return cnt
