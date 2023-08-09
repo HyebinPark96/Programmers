@@ -3,9 +3,6 @@ def solution(babbling):
     repeats_str_array = ["ayaaya", "yeye", "woowoo", "mama"]
     
     answer = 0
-    
-    global before_len
-    before_len = 0
 
     for i in range(len(babbling)):
         for j in range(len(str_array)):
