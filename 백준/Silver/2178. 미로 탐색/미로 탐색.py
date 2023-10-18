@@ -30,7 +30,7 @@ def bfs(x,y):
                 continue # 아래 코드 무시하고 다음 반복 요소로 이동 
             if graph[nx][ny] == 0:
                 continue 
-            if graph[nx][ny] == 1:
+            if graph[nx][ny] == 1: # 아직 안지난 칸이라면 1이므로 큐에 넣기 
                 graph[nx][ny] = graph[x][y] + 1 # 최단거리 기록 
                 queue.append((nx, ny))
     
@@ -41,8 +41,8 @@ def bfs(x,y):
 # 0,0 좌표부터 출발 
 print(bfs(0,0))
 
-
-
-
+# BFS 알고리즘이 최단거리를 증명할 수 있는 이유 
+# 경로가 여러개라도 각 경로마다 이동거리를 +1씩 기록하면서 이동하므로, (최단거리가 아닌 경로에서 이동할 때) 칸의 값이 2 이상이라면(= 이미 지나간 칸이라면) 큐에 삽입 안하고, 최단거리에 기록되지 못한다.   
+# 참조 https://ansohxxn.github.io/programmers/114/
 
 
