@@ -18,7 +18,7 @@ def bfs(sx, sy, ex, ey, l):
             print(graph[x][y] - 1)
             return True
         
-        # 재귀함수로 8가지 방향 방문처리 
+        # 8가지 방향 방문처리 
         for i in range(8):
             nx = x + dx[i]
             ny = y + dy[i]
